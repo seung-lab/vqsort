@@ -1,0 +1,3 @@
+include LICENSE
+include vqsort/vqsort_bind.cpp
+include-recursive third_party

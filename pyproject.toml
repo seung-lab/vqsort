@@ -1,0 +1,42 @@
+[build-system]
+requires = ["scikit-build-core>=0.9", "pybind11>=2.12"]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "vqsort"
+version = "0.1.0"
+description = "Vectorized quicksort (vqsort) bindings for large numpy integer arrays."
+readme = "README.md"
+license = { text = "BSD-3" }
+authors = [
+    { name = "William Silversmith", email = "ws9@princeton.edu" }
+]
+keywords = ["sorting", "sort", "vqsort"]
+requires-python = ">=3.9"
+dependencies = ["numpy"]
+
+classifiers = [
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Operating System :: POSIX",
+    "Operating System :: MacOS",
+    "Operating System :: Microsoft :: Windows :: Windows 10",
+]
+
+[project.urls]
+Homepage = "https://github.com/seung-lab/fastmorph/"
+
+[tool.scikit-build]
+cmake.source-dir = "."
+cmake.version = ">=3.21"
+cmake.build-type = "Release"
+wheel.packages = []
